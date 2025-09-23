@@ -79,6 +79,7 @@ export default function ConvertPage() {
     try {
         const formData = new FormData();
         formData.append('video_file', videoFile);
+        formData.append('uid', user.id);
 
         const response = await fetch('https://ajinkyabhandare200210--video-processor.modal.run/process-and-upload', {
             method: 'POST',
