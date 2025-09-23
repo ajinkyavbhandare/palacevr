@@ -11,7 +11,7 @@ export default function LoginPage() {
     await supabase.auth.signInWithOAuth({
       provider,
       options: {
-        redirectTo: `http://localhost:3000/callback`,
+        redirectTo: `https://palacevr.vercel.app/callback`,
       },
     });
   };
